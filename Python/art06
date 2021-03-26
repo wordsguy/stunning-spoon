@@ -1,0 +1,9 @@
+z = 12
+f = open("x.txt", "w")
+for x in range(z):
+
+    hyphens = "~~" * (z-x)
+    art = ("" * x + " " * x + hyphens)
+
+    f.write(str(art) + "\n")
+    f.close
