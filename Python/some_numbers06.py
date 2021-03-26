@@ -1,6 +1,6 @@
-from typing import Iterator
 import random
 import string
+from typing import Iterator
 
 def get_collection(
     *,
@@ -43,6 +43,7 @@ def generate(
             k=length))
         # ''
 
+
 def main():
     pool = get_collection(
         upper=False,
@@ -51,15 +52,21 @@ def main():
         special=False)
 
     for w_list in generate_multiple(
-        2,
+        8,
         8,
         pool
     ):
         print(w_list)
 
+
         f = open("x.txt", "w")
-        f.write(str(w_list) + "\n")
-        f.close
+        for w_list in generate_multiple(
+        8,
+        8,
+        pool
+    ):
+            f.write(str(w_list) + "\n")
+            f.close
 
 if __name__ == '__main__':
     main()
