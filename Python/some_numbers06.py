@@ -58,7 +58,7 @@ def main():
     ):
         print(w_list)
 
-
+         
         f = open("x.txt", "w")
         for w_list in generate_multiple(
         8,
