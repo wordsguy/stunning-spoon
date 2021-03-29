@@ -12,3 +12,7 @@
 	alt + 61
   Result: =
   <hr>
+  
+	alt + 33
+  Result: !
+  <hr>
